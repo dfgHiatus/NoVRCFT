@@ -9,7 +9,7 @@ Based of the [NeosWCFaceTrack](https://github.com/dfgHiatus/NeosWCFaceTrack "Neo
 3. Head over to [here](https://github.com/Ruz-eh/NeosWCFaceTrack/releases/tag/1.0.2 "here") and put this somewhere safe. Inside of this, head to ```\Binaries``` and make a shortcut to ```run.bat```. Place this on your desktop!
 4. Run WCFace by clicking on your new ```run.bat```. Now, run the bundled ```VRCFaceTracking.exe```.
 5. Start VRChat.
-6. Go crazy!
+6. Go crazy! You can use the Debug OSC Dialouge to see if everything is working properly.
 
 ## Contributors
 This wouldn\'t be possible without the help of these amazing people:

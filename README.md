@@ -6,7 +6,7 @@ Based of the [NeosWCFaceTrack](https://github.com/dfgHiatus/NeosWCFaceTrack "Neo
 # Installation
 1. Download the most recent copy of NoVRCFT from the releases tab and extract it.
 2. Place the ```WCFace.dll``` file inside your ```...\AppData\Roaming\VRCFaceTracking\CustomLibs``` folder. You can get here by pressing ```Windows+R``` and typing in  ```%appdata```. You can create the folder if it\'s missing.
-3. Run WCFace by clicking on your new ```WCFace - Shortcut```. Now, run the bundled ```VRCFaceTracking - Shortcut```.
+3. Run WCFace by clicking on ```WCFace - Shortcut```. Now, run the bundled ```VRCFaceTracking - Shortcut```.
 4. Start VRChat.
 5. Go crazy! You can use the Debug OSC Dialouge to see if everything is working properly.
 

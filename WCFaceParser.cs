@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using VRCFaceTracking;
 
 namespace WCFace.Parser {
@@ -64,15 +65,15 @@ namespace WCFace.Parser {
             switch (Type.GetTypeCode(typeof(T)))
             {
                 case TypeCode.Boolean:
-                    try { valueToReturn = (T)Convert.ChangeType(val, typeof(T)); } catch (Exception e) { Logger.Error($"Failed to cast value: {val} with exception of: {e}"); }
+                    try { valueToReturn = (T)Convert.ChangeType(val, typeof(T), CultureInfo.InvariantCulture); } catch (Exception e) { Logger.Error($"Failed to cast value: {val} with exception of: {e}"); }
                     break;
                 case TypeCode.Double:
-                    try { valueToReturn = (T)Convert.ChangeType(val, typeof(T)); } catch (Exception e) { Logger.Error($"Failed to cast value: {val} with exception of: {e}"); }
+                    try { valueToReturn = (T)Convert.ChangeType(val, typeof(T), CultureInfo.InvariantCulture); } catch (Exception e) { Logger.Error($"Failed to cast value: {val} with exception of: {e}"); }
                     break;
                 default:
                     if (typeof(T) == typeof(float))
                     {
-                        try { valueToReturn = (T)Convert.ChangeType(val, typeof(T)); } catch (Exception e) { Logger.Error($"Failed to cast value: {val} with exception of: {e}"); }
+                        try { valueToReturn = (T)Convert.ChangeType(val, typeof(T), CultureInfo.InvariantCulture); } catch (Exception e) { Logger.Error($"Failed to cast value: {val} with exception of: {e}"); }
                         break;
                     }
                     break;

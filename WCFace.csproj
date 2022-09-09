@@ -42,7 +42,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="VRCFaceTracking">
-      <HintPath>C:\Users\14695\Downloads\VRCFaceTracking.exe</HintPath>
+      <HintPath>..\..\..\Desktop\NoVRCFT\VRCFT\VRCFaceTracking.exe</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
       <HintPath>.\websocket-sharp.dll</HintPath>

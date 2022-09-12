@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading;
-using WebSocketSharp;
+using ViveSR.anipal.Lip;
 using VRCFaceTracking;
-using VRCFaceTracking.SRanipal;
 using VRCFaceTracking.Params;
 using WCFace.Parser;
-using ViveSR.anipal.Lip;
+using WebSocketSharp;
 
 namespace WCFace.Data
 {
@@ -253,9 +251,9 @@ namespace WCFace.Data
                     UnifiedTrackingData.LatestEyeData.Right = MakeEye("right", newWCFTData);
                     UnifiedTrackingData.LatestEyeData.Combined = MakeEye("combined", newWCFTData);
 
-                    UnifiedTrackingData.LatestLipShapes[LipShape_v2.JawOpen] = newWCFTData.MouthOpen;
-                    UnifiedTrackingData.LatestLipShapes[LipShape_v2.MouthSmileLeft] = newWCFTData.MouthWide;
-                    UnifiedTrackingData.LatestLipShapes[LipShape_v2.MouthSmileRight] = newWCFTData.MouthWide;
+                    UnifiedTrackingData.LatestLipData.LatestShapes[(int) LipShape_v2.JawOpen] = newWCFTData.MouthOpen;
+                    UnifiedTrackingData.LatestLipData.LatestShapes[(int) LipShape_v2.MouthSmileLeft] = newWCFTData.MouthWide;
+                    UnifiedTrackingData.LatestLipData.LatestShapes[(int) LipShape_v2.MouthSmileRight] = newWCFTData.MouthWide;
                 }
                 else
                 {

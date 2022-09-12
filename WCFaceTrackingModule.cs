@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading;
 using VRCFaceTracking;
-using VRCFaceTracking.Params;
 using WCFace.Data;
 
 namespace WCFace
@@ -14,7 +9,6 @@ namespace WCFace
     {
         private WCFaceData wcFaceData;
         public override (bool SupportsEye, bool SupportsLip) Supported => (true, true);
-        public override (bool UtilizingEye, bool UtilizingLip) Utilizing { get; set; }
         public override Action GetUpdateThreadFunc() { return () => { }; }
 
         public override (bool eyeSuccess, bool lipSuccess) Initialize(bool eye, bool lip)
@@ -38,7 +32,5 @@ namespace WCFace
         {
             wcFaceData.Teardown();
         }
-
-        public override void Update() { }
     }
 }

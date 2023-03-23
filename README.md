@@ -1,3 +1,8 @@
+# This module has been archived
+### For desktop mode face tracking, please defer to the following:
+- [iPhone - VRCFaceTracking LiveLink](https://github.com/Dazbme/VRCFaceTracking-LiveLink)
+- [Android - VRCFaceTracking MeowFace](https://github.com/regzo2/VRCFaceTracking-MeowFace/tree/master)
+
 # NoVRCFT
 Screen mode eye and face tracking for VRChat. This will work with avatars already setup for VRCFT.
 
